@@ -1,0 +1,23 @@
+@import "../variables/Variables.scss";
+
+.navbar {
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: $backgroundPrimary;
+    border-bottom: solid $grey 1px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .navbar-brand {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav-item .nav-link {
+        color: white;
+    }
+}

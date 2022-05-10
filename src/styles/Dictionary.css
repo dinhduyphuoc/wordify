@@ -1,0 +1,45 @@
+.form-group .label-wrapper {
+  color: white;
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.form-group .form-control {
+  width: 70%;
+  height: 45px;
+  color: white;
+  background-color: #0a092d;
+  margin: 20px auto;
+  border-radius: 25px;
+  border: solid white 1px;
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-group .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.form-group .form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.form-group .form-control::placeholder {
+  color: white;
+}
+
+.form-group .btn-wrapper {
+  text-align: center;
+}
+
+.form-group .btn-wrapper button {
+  color: black;
+  background-color: #faaf40;
+  border: solid #faaf40;
+}
+/*# sourceMappingURL=Dictionary.css.map */
