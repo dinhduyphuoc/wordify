@@ -8,6 +8,7 @@ import FlashCard from "./components/FlashCard";
 import CreateFlashCard from "./components/create-flash-card/CreateFlashCard";
 import Explore from "./components/Explore";
 import Signup from "./components/Signup";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="create" element={<CreateFlashCard />} />
           <Route path="explore" element={<Explore />} />
         </Route>
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

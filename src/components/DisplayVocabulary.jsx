@@ -12,7 +12,7 @@ function DisplayVocabulary(props) {
       try {
         const { data } = await getWord(id);
       } catch (ex) {
-        navigate("/not-found");
+        navigate("/dictionary");
       }
     };
 
