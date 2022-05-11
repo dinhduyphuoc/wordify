@@ -1,0 +1,15 @@
+.errorContainer {
+  text-align: justify;
+}
+
+.errorContainer img {
+  max-width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.errorContainer h2 {
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=NotFound.css.map */

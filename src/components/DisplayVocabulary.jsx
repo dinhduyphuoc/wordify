@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getWord } from "../services/dictionary";
+import { useParams, useNavigate } from "react-router-dom";
+import { getWord, validate } from "../services/dictionary";
 
 function DisplayVocabulary(props) {
   const [word, setWord] = useState([]);
   const { id } = useParams();
+  let navigate = useNavigate();
 
   useEffect(() => {
     const validateWord = async () => {
-      const { data } = await getWord(id);
-      setWord(data);
+      try {
+        const { data } = await getWord(id);
+      } catch (ex) {
+        navigate("/not-found");
+      }
     };
 
     validateWord();
-  });
+  }, []);
+
   return (
     <div>
       <p>{id}</p>
