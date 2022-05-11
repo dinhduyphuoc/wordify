@@ -1,0 +1,8 @@
+.card > * {
+  color: black;
+}
+
+.card-body > * > .form-label {
+  color: black;
+}
+/*# sourceMappingURL=CreateFlashCard.css.map */

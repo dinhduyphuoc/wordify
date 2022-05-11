@@ -6,10 +6,10 @@ function Input({ name, value, label, placeholder, onChange }) {
     <Form.Group>
       <Form.Label htmlFor={name}>{label}</Form.Label>
       <Form.Control
-        value={value}
+        className="mb-3"
         id={name}
-        onChange={onChange}
         placeholder={placeholder}
+        onChange={onChange}
       />
     </Form.Group>
   );

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,GAAG,CAAC,CAAC;EACN,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,UAAU,GAAG,CAAC,GAAE,WAAW,CAAC;EACxB,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "CreateFlashCard.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "CreateFlashCard.css"
+}
