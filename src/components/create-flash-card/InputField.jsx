@@ -2,14 +2,9 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Input from "../commons/Input";
 
-function InputField({ badge, xs, header }) {
+function InputField({ badge, className, header }) {
   return (
-    <Card
-      bg={badge}
-      style={xs}
-      text={badge === "light" ? "dark" : "white"}
-      className="mb-2"
-    >
+    <Card className="mb-5">
       <Card.Header>Flashcard #{header}</Card.Header>
       <Card.Body>
         <Input label="Question" />

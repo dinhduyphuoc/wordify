@@ -6,6 +6,7 @@ a {
 
 .nav-bar {
     padding: 10px 20px;
+
 }
 
 .nav {
@@ -20,6 +21,22 @@ a {
     float: right;
 }
 
+// Dropdown button
+.nav-link:hover {
+    color: $yellowPrimary;
+}
+
+// NavBar items
+.nav-link {
+    color: white;
+}
+
+// Navbar items on hover
+.item:hover {
+    color: $yellowPrimary;
+}
+
+
 .nav-bar {
     position: relative;
 }
@@ -31,6 +48,12 @@ a {
     font-size: 1.6em;
 }
 
+.logo:hover {
+    color: white;
+}
+
 .item {
     color: white;
 }
+
+// Custom

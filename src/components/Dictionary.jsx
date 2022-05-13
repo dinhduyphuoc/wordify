@@ -4,7 +4,7 @@ import "../styles/Dictionary.css";
 
 function Dictionary(props) {
   let navigate = useNavigate();
-  const [vocab, setVocab] = useState("");
+  const [word, setVocab] = useState("");
 
   const handleChange = (text) => {
     setVocab(text);
@@ -12,7 +12,7 @@ function Dictionary(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/dictionary/${vocab.toLowerCase()}`);
+    navigate(`/dictionary/${word.toLowerCase()}`);
   };
 
   return (

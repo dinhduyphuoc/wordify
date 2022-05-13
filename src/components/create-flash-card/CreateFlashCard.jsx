@@ -26,7 +26,7 @@ function CreateFlashCard(props) {
       <Container>
         <Row>
           <Col className="mt-5" md={4}>
-            <h3>Create a new card set</h3>
+            <h3 className="text-light">Create a new card set</h3>
             <Card style={{ backgroundColor: "transparent" }}>
               <Card.Body>
                 <Form>
@@ -57,7 +57,7 @@ function CreateFlashCard(props) {
           <Col md={1}></Col>
           <Col className="mt-5" md={7}>
             {[...Array(fieldNumber)].map((e, i) => (
-              <InputField key={i} xs={{ margin: "2em" }} header={i + 1} />
+              <InputField key={i} header={i + 1} />
             ))}
           </Col>
         </Row>

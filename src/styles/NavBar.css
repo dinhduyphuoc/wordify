@@ -20,6 +20,18 @@ a {
   float: right;
 }
 
+.nav-link:hover {
+  color: #faaf40;
+}
+
+.nav-link {
+  color: white;
+}
+
+.item:hover {
+  color: #faaf40;
+}
+
 .nav-bar {
   position: relative;
 }
@@ -29,6 +41,10 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.6em;
+}
+
+.logo:hover {
+  color: white;
 }
 
 .item {

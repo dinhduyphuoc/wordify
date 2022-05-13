@@ -67,7 +67,6 @@ function NavBar(props) {
             </NavDropdown>
           );
         })}
-        <Outlet />
       </Nav>
     </div>
   );
