@@ -1,0 +1,17 @@
+.highlight {
+  color: #faaf40;
+}
+
+.bg-yellow-primary {
+  background-color: #faaf40;
+}
+
+.main-divider {
+  background-image: linear-gradient(120deg, #fff 100%, #faaf40 100%);
+  padding: 3px;
+}
+
+.example {
+  font-size: 15px;
+}
+/*# sourceMappingURL=DisplayVocabulary.css.map */

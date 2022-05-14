@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Row, Col, Container } from "react-bootstrap";
 import { getWord, validate } from "../services/dictionary";
+import "../styles/DisplayVocabulary.css";
 
 function DisplayVocabulary(props) {
   const [word, setWord] = useState([]);
@@ -35,13 +36,12 @@ function DisplayVocabulary(props) {
           <Col>
             <Row>
               <p className="fst-italic">
-                View the word <span className="fw-bold">{word.word}</span> in
+                View the word{" "}
+                <span className="fw-bold highlight">{word.word}</span> in
                 English
               </p>
             </Row>
-            <Row>
-              <hr />
-            </Row>
+            <hr />
             <Row>
               <span className="text-uppercase fs-2 fw-bold">{word.word}</span>
             </Row>
@@ -58,8 +58,26 @@ function DisplayVocabulary(props) {
               <span className="badge bg-light text-dark">{word.phonetic}</span>
             </div>
             <br />
-            <hr />
-            <Row></Row>
+            <hr className="main-divider" />
+            <Row>
+              <span className="fw-bold fs-3 mb-2">Meanings</span>
+            </Row>
+            {word.meanings.map((m) =>
+              m.definitions.map((d, i) => (
+                <div key={i}>
+                  <span className="badge rounded-pill bg-yellow-primary me-2">
+                    A{i + 1}:
+                  </span>
+                  <span className="fs-5">
+                    {d.definition}
+                    <br />
+                    <span className="fst italic">Hello</span>
+                  </span>
+                  <br />
+                  <hr />
+                </div>
+              ))
+            )}
           </Col>
         </Container>
       </div>

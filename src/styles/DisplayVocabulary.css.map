@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACP,KAAK,ECDO,OAAO;CDEtB;;AAED,AAAA,kBAAkB,CAAC;EACf,gBAAgB,ECLJ,OAAO;CDMtB;;AAED,AAAA,aAAa,CAAC;EACV,gBAAgB,EAAE,gDAAgD;EAClE,OAAO,EAAE,GAAG;CACf;;AAED,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "DisplayVocabulary.scss",
+        "../variables/Variables.scss"
+    ],
+    "names": [],
+    "file": "DisplayVocabulary.css"
+}
