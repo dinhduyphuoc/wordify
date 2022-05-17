@@ -41,7 +41,6 @@ function DisplayVocabulary(props) {
                 English
               </p>
             </Row>
-            <hr />
             <Row>
               <span className="text-uppercase fs-2 fw-bold">{word.word}</span>
             </Row>
@@ -60,21 +59,26 @@ function DisplayVocabulary(props) {
             <br />
             <hr className="main-divider" />
             <Row>
-              <span className="fw-bold fs-3 mb-2">Meanings</span>
+              <span className="fw-bold fs-3">Meanings</span>
             </Row>
             {word.meanings.map((m) =>
               m.definitions.map((d, i) => (
-                <div key={i}>
-                  <span className="badge rounded-pill bg-yellow-primary me-2">
-                    A{i + 1}:
-                  </span>
-                  <span className="fs-5">
-                    {d.definition}
-                    <br />
-                    <span className="fst italic">Hello</span>
-                  </span>
-                  <br />
-                  <hr />
+                <div key={i} className="mb-5">
+                  <hr className="mb-2" />
+                  <div className="meaning">
+                    <span className="badge rounded-pill bg-yellow-primary me-2">
+                      A{i + 1}:
+                    </span>
+                    <span className="fs-5">
+                      {d.definition}
+                      <br />
+                      {d.example && (
+                        <span className="fst-italic example">
+                          Eg: {d.example}
+                        </span>
+                      )}
+                    </span>
+                  </div>
                 </div>
               ))
             )}

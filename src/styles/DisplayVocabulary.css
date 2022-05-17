@@ -7,11 +7,18 @@
 }
 
 .main-divider {
-  background-image: linear-gradient(120deg, #fff 100%, #faaf40 100%);
-  padding: 3px;
+  padding: 2px;
+  background-color: #faaf40;
+  opacity: 100%;
+}
+
+.meaning {
+  background-color: #090828;
+  padding: 25px 40px;
 }
 
 .example {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 40px;
 }
 /*# sourceMappingURL=DisplayVocabulary.css.map */
