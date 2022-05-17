@@ -1,6 +1,4 @@
 import React from "react";
-import { Card, Form } from "react-bootstrap";
-import Input from "./commons/Input";
 import { Outlet, useParams } from "react-router-dom";
 
 function FlashCard(props) {

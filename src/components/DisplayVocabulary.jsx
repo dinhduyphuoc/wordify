@@ -35,7 +35,7 @@ function DisplayVocabulary(props) {
         <Container>
           <Col>
             <Row>
-              <p className="fst-italic">
+              <p className="fst-italic ps-2">
                 View the word{" "}
                 <span className="fw-bold highlight">{word.word}</span> in
                 English
