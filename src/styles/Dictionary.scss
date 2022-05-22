@@ -35,18 +35,55 @@
         background-color: rgb(255, 230, 107);
     }
 
-    img {
-        width: 400px;
-        border-top: solid 2px rgb(255, 230, 107);
-    }
-
     .art-wrapper {
         display: flex;
+        margin-bottom: 100px;
+        background-color: $darkBluePrimary;
 
+        .art-left {
+            width: 400px;
+            border-top: solid 2px rgb(255, 230, 107);
+            padding: 0 20px;
+        }
+        
         .description {
             margin: auto 0;
             padding: 50px;
         }
+    }
+    
+    .art-wrapper-right {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 100px;
+
+        
+        .art-right {
+            width: 320px;
+            border-bottom: solid 2px rgb(255, 230, 107);
+            border-right: solid 2px rgb(255, 230, 107);
+            border-top: solid 2px rgb(255, 230, 107);
+            padding: 15px;
+        }
+
+        .description-right {
+            text-align: right;
+            padding: 0 50px;
+            margin: auto 0;
+        }
+
+        .markup-link {
+            padding: 5px;
+            margin: 0 5px;
+            background-color: rgb(255, 230, 107);
+        }
+
+        .markup-link a {
+            text-decoration: none;
+            color: $darkBluePrimary;
+            font-weight: 700;
+        }
+        
     }
 }
 

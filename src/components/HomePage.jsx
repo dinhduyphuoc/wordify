@@ -18,7 +18,7 @@ function HomePage(props) {
         <video className="videoTag" src={cover} autoPlay loop muted />
         <div className="content">
           <h1 className="fw-bold title">Wordify</h1>
-          <p>Approach to more advanced English resources!</p>
+          <p>Approach more advanced English resources!</p>
           <Button onClick={handleSubmit} className="start">
             Start now
           </Button>
