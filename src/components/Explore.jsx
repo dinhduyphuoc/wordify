@@ -1,7 +1,7 @@
 import React from "react";
 
 function Explore(props) {
-  return <div>Explore</div>;
+  return <div>Coming soon!</div>;
 }
 
 export default Explore;

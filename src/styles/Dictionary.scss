@@ -1,22 +1,16 @@
 @import "../variables/Variables.scss";
 
 .form-group {
-
-    .label-wrapper {
-        color: white;
-        font-size: 1.7em;
-        font-weight: 600;
-        text-align: center;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
 
     .form-control {
         width: 70%;
         height: 45px;
         color: white;
         background-color: $backgroundPrimary;
-        margin: 20px auto;
         border-radius: 25px;
         border: solid white 1px;
     }
@@ -25,13 +19,34 @@
         color: white;
     }
 
-    .btn-wrapper {
-        text-align: center;
-        
-        button {
-            color: black;
-            background-color: $yellowPrimary;
-            border: solid $yellowPrimary;
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: $yellowPrimary;
+    }
+}
+
+.banner {
+    width: 100%;
+
+    .markup {
+        color: rgb(26, 26, 26);
+        background-color: rgb(255, 230, 107);
+    }
+
+    img {
+        width: 400px;
+        border-top: solid 2px rgb(255, 230, 107);
+    }
+
+    .art-wrapper {
+        display: flex;
+
+        .description {
+            margin: auto 0;
+            padding: 50px;
         }
     }
 }
+

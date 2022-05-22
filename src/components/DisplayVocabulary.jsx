@@ -29,7 +29,7 @@ function DisplayVocabulary(props) {
   }
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       {console.log(word)}
       <div className="m-3">
         <Container>
